@@ -34,5 +34,6 @@ body.collection {
     color: white;
 }
 .collection-album-container img {
-    width: 80%;
+    width: 40%;
+    position: relative;
 }
