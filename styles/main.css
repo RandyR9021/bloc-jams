@@ -68,6 +68,9 @@ body.landing {
     margin: 0 auto;
     max-width: 64rem;
 }
+.container-narrow {
+    max-wdith: 56rem;
+}
 
 /* Medium and small screens (640px) */
 @media (min-width: 40rem) {
