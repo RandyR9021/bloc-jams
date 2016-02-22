@@ -31,6 +31,22 @@ var albumMarconi = {
      ]
  };
 
+// 3rd example album
+ var albumBillyJoel = {
+     name: 'Piano Man',
+     artist: 'Billy Joel',
+     label: 'Columbia',
+     year: '1970',
+     albumArtUrl: 'assets/images/album_covers/01.png',
+     songs: [
+         { name: 'Piano Man', length: '5:26' },
+         { name: 'Captain Jack', length: '4:14' },
+         { name: 'Just the way you are', length: '6:01' },
+         { name: 'Uptown Girl', length: '4:21'},
+         { name: 'The Longest Time Spent', length: '3:15'}
+     ]
+ };
+
 var createSongRow = function (songNumber, songName, songLength) {
     var template =
         '<tr class="album-view-song-item">'
@@ -68,4 +84,14 @@ var setCurrentAlbum = function(album) {
  
  window.onload = function() {
      setCurrentAlbum(albumPicasso);
+     
+     var albums = [albumPicasso, albumMarconi, albumBillyJoel];
+     var index = 1;
+     albumImage.addEventListener("click", function(event) {
+         setCurrentAlbum(albums[index]);
+         index++;
+         if (index == albums.length) {
+             index = 0;
+         }
+     });
  };
