@@ -30,6 +30,6 @@ $(window).load(function() {
      var $newThumbnail = buildCollectionItemTemplate();
      for (var i = 0; i < 12; i++) {
          // #5
-         $collectionContainer.append($newThumbnail);
+         $collectionContainer.append($newThumbNail);
      }
  });
