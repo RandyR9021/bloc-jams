@@ -27,10 +27,8 @@ $(window).load(function() {
     
     // #4
      $collectionContainer.empty();
- 
+     var $newThumbnail = buildCollectionItemTemplate();
      for (var i = 0; i < 12; i++) {
-         var $newThumbNail = buildCollectionItemTemplate();
-         
          // #5
          $collectionContainer.append($newThumbnail);
      }
