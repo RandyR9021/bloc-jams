@@ -32,6 +32,6 @@ $(window).load(function() {
          var $newThumbNail = buildCollectionItemTemplate();
          
          // #5
-         $collectionContainer.append($newThumbnail);
+         $collectionContainer.append($newThumbNail);
      }
  });
